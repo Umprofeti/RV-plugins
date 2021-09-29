@@ -356,7 +356,7 @@ class SUBTITULO_RV extends WP_Widget{
 
         ?>
         
-        <p class="subtitle text-center"><?php echo $subtitulo ?></p>
+        <p class="subtitle text-center mt-1"><?php echo $subtitulo ?></p>
         <?php 
 	}
 
