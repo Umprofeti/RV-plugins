@@ -3,14 +3,16 @@
 
 Plugin Name: Rendez-Vous Plugin
 Description: Paquete creado a medida para la web de "Rendez-Vous Magazine". El cual añade la posibilidad de implementar Sliders, Categorías personalizadas y Wigets.
-Version: 1.0.3
+Version: 1.0.4
 Author: Jonathan Rodríguez
 Author URI: https://www.instagram.com/silicatopa/
 Text Domain: Rendez-Vous Plugin
 */
 
 //Widgets
- 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; 
+}
 require_once "rv-widgets.php";
 
 function rv_widget_init(){
@@ -82,10 +84,10 @@ function rv_widget_init(){
     
                 'name'  => 'Logo inferior',
                 'id'    => 'log_inf',
-                'before_widget' => '<div class="nombre-categoria">',
-                'after_widget'  => '</div>',
-                'before_title'  => '<h3 class="link-categoria"',
-                'after_title'   =>  '</h3>'
+                'before_widget' => '',
+                'after_widget'  => '',
+                'before_title'  => '',
+                'after_title'   =>  ''
     
     
         ));
@@ -94,10 +96,10 @@ function rv_widget_init(){
     
                 'name'  => 'Footer1',
                 'id'    => 'red_soc1',
-                'before_widget' => '<div">',
-                'after_widget'  => '</div>',
-                'before_title'  => '<h3 class="link-categoria"',
-                'after_title'   =>  '</h3>'
+                'before_widget' => '',
+                'after_widget'  => '',
+                'before_title'  => '',
+                'after_title'   =>  ''
     
     
         ));
